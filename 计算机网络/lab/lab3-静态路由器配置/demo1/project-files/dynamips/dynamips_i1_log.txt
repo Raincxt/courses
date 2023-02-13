@@ -1,0 +1,66 @@
+Nov 10 10:40:14.450 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Nov 10 10:40:14.450 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 60110.
+Nov 10 10:40:14.653 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 10 10:40:14.669 HYPERVISOR: exec_cmd: hypervisor working_dir F:\study\计算机网络\lab3 静态路由器配置\demo1\project-files\dynamips 
+Nov 10 10:40:14.669 GENERAL: working_dir=F:\study\计算机网络\lab3 静态路由器配置\demo1\project-files\dynamips
+Nov 10 10:40:14.669 HYPERVISOR: exec_cmd: vm create R1 1 c3745 
+Nov 10 10:40:14.685 VM: VM R1 created.
+Nov 10 10:40:14.688 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5000 
+Nov 10 10:40:14.688 HYPERVISOR: exec_cmd: c3745 get_mac_addr R1 
+Nov 10 10:40:14.704 HYPERVISOR: exec_cmd: vm set_exec_area R1 64 
+Nov 10 10:40:14.704 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 10 10:40:14.719 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 NM-1FE-TX 
+Nov 10 10:40:14.719 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 10 10:40:14.719 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x60be9420 
+Nov 10 10:40:14.735 HYPERVISOR: exec_cmd: vm set_ram R1 256 
+Nov 10 10:40:14.735 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+Nov 10 10:40:14.751 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 10 10:40:14.751 HYPERVISOR: exec_cmd: vm slot_add_binding R1 2 0 NM-1FE-TX 
+Nov 10 10:40:14.766 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/xiaot/GNS3/images/IOS/c3745-adventerprisek.124-25d.image 
+Nov 10 10:40:14.766 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Nov 10 10:40:14.782 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 10 10:40:14.782 HYPERVISOR: exec_cmd: vm slot_add_binding R1 3 0 NM-1FE-TX 
+Nov 10 10:40:14.798 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 10 10:40:14.814 HYPERVISOR: exec_cmd: vm slot_add_binding R1 4 0 NM-1FE-TX 
+Nov 10 10:40:14.814 HYPERVISOR: exec_cmd: vm set_config R1 configs/i1_startup-config.cfg 
+Nov 10 10:41:09.817 HYPERVISOR: exec_cmd: vm create Ghost 0 c3745 
+Nov 10 10:41:09.829 VM: VM Ghost created.
+Nov 10 10:41:09.829 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/xiaot/GNS3/images/IOS/c3745-adventerprisek.124-25d.image 
+Nov 10 10:41:09.829 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Nov 10 10:41:09.844 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c3745-adventerprisek.124-25d.image-256.ghost 
+Nov 10 10:41:09.844 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+Nov 10 10:41:09.860 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Nov 10 10:41:09.860 HYPERVISOR: exec_cmd: vm start Ghost 
+Nov 10 10:41:10.235 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Nov 10 10:41:10.235 HYPERVISOR: exec_cmd: vm stop Ghost 
+Nov 10 10:41:10.314 VM: VM Ghost shutdown.
+Nov 10 10:41:10.314 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Nov 10 10:41:10.314 VM: VM Ghost destroyed.
+Nov 10 10:41:10.345 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Nov 10 10:41:10.345 HYPERVISOR: exec_cmd: vm set_ghost_file R1 c3745-adventerprisek.124-25d.image-256.ghost 
+Nov 10 10:41:10.345 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 10 10:41:10.360 HYPERVISOR: exec_cmd: vm start R1 
+Nov 10 10:41:42.317 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 10 10:41:42.317 HYPERVISOR: exec_cmd: vm suspend R1 
+Nov 10 10:42:38.357 HYPERVISOR: exec_cmd: nio create_udp udp-f172482c-da53-41a4-adbd-a2d2a712e164 10000 127.0.0.1 10001 
+Nov 10 10:42:38.373 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-f172482c-da53-41a4-adbd-a2d2a712e164 
+Nov 10 10:42:38.388 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 10 10:43:15.105 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 10 10:43:15.115 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x0 
+Nov 10 10:43:15.115 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 10 10:43:15.125 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 10 10:43:15.136 HYPERVISOR: exec_cmd: vm resume R1 
+Nov 10 10:43:35.147 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 10 10:43:35.162 HYPERVISOR: exec_cmd: vm get_idle_pc_prop R1 0 
+Nov 10 10:43:35.162 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 10 10:43:35.178 HYPERVISOR: exec_cmd: vm stop R1 
+Nov 10 10:43:35.320 VM: VM R1 shutdown.
+Nov 10 10:43:35.320 HYPERVISOR: exec_cmd: vm extract_config R1 
+Nov 10 14:02:07.708 HYPERVISOR: exec_cmd: vm extract_config R1 
+Nov 10 14:02:10.123 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 10 14:02:10.148 HYPERVISOR: exec_cmd: vm extract_config R1 
+Nov 10 14:02:10.169 HYPERVISOR: exec_cmd: vm delete R1 
+Nov 10 14:02:10.169 VM: VM R1 destroyed.
+Nov 10 14:02:10.198 HYPERVISOR: exec_cmd: hypervisor stop 
+Nov 10 14:02:10.678 HYPERVISOR: Stopped.
+Nov 10 14:02:10.678 GENERAL: reset done.
